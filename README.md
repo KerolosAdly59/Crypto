@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🪙 Crypto Dashboard
+A real-time cryptocurrency tracking dashboard built with Next.js and powered by the CoinGecko API. Browse live prices, market data, trending coins, trending NFTs, and detailed coin statistics — all in one place.
 
-## Getting Started
+🔗 Live Demo
+https://crypto-three-silk.vercel.app
 
-First, run the development server:
 
-```bash
+✨ Features
+
+Dashboard — Top 10 cryptocurrencies with live prices, 24h change, and market cap
+Market — Full market overview with search functionality
+Coin Details — Deep dive into any coin: ATH, ATL, circulating supply, algorithm, genesis date, about section, and statistics
+Trending Coins — Top 15 trending cryptocurrencies ranked by CoinGecko
+Trending NFTs — Live NFT floor prices and collections
+Market Categories — Browse coins by category (PoS, Binance Launchpad, etc.)
+Favorites — Save and track your favorite coins
+Real-time Data — All data fetched live from the CoinGecko API
+
+
+🛠️ Tech Stack
+TechnologyPurposeNext.js 14React framework with App RouterCoinGecko APILive cryptocurrency & NFT dataTailwind CSSStyling and responsive designVercelDeployment and hosting
+
+📁 Project Structure
+├── app/
+│   ├── Dashboard/          # Main dashboard page (Top 10 coins)
+│   ├── Market/             # Full market listing with search
+│   ├── Favorite/           # User's saved favorite coins
+│   ├── TrendingCoins/      # Trending coins, NFTs & categories
+│   └── CoinDetails/[id]/   # Dynamic coin detail page
+├── components/             # Reusable UI components
+├── public/                 # Static assets
+└── ...
+
+🚀 Getting Started
+Prerequisites
+
+Node.js 18+
+npm or yarn
+
+Installation
+bash# Clone the repository
+git clone https://github.com/your-username/crypto-dashboard.git
+
+# Navigate to the project directory
+cd crypto-dashboard
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🌐 API Reference
+This project uses the CoinGecko API (free tier):
+EndpointUsage/coins/marketsMarket prices & stats/search/trendingTrending coins & NFTs/coins/{id}Individual coin details/coins/categoriesMarket categories
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📦 Deployment
+The app is deployed on Vercel. To deploy your own instance:
+bashnpm run build
+Or connect your GitHub repo to Vercel for automatic deployments on every push.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+👤 Author
+Kerolos
 
-## Learn More
+Portfolio: https://portfolioo-theta-taupe.vercel.app
+GitHub: https://github.com/KerolosAdly59/Crypto
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 License
+This project is open source and available under the MIT License.
